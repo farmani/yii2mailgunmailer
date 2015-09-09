@@ -1,0 +1,30 @@
+{
+    "name": "farmani/yii2mailgunmailer",
+    "description": "Mailgun Mailer for Yii 2 framework.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","mailer","mailgun"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ramin Farmani",
+            "email": "ramin.farmani@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "mailgun/mailgun-php": "1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "farmani\\yii2mailgunmailer\\": "",
+            "Mailgun\\": ""
+        }
+    },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/farmani/yii2mailgunmailer"
+        }
+    ],
+    "minimum-stability": "stable"
+}
