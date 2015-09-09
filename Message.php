@@ -1,20 +1,21 @@
 <?php
 
-namespace katanyoo\mailgunmailer;
+namespace farmani\yii2mailgunmailer;
 
 use yii\mail\BaseMessage;
 use Mailgun\Messages\MessageBuilder;
 
-require_once __DIR__.'/../../mailgun/mailgun-php/src/Mailgun/Constants/Constants.php';
+require_once __DIR__.'/../../mailgun/mailgun-php/src/Mailgun/Constants/Api.php';
+require_once __DIR__.'/../../mailgun/mailgun-php/src/Mailgun/Constants/ExceptionMessages.php';
 
 /**
  * Message implements a message class based on Mailgun.
  *
  *
- * @method Mailer getMailer() returns mailer instance.
+ * @method \farmani\yii2mailgunmailer\Mailer getMailer() returns mailer instance.
  *
  *
- * @author Katanyoo Ubalee <ublee.k@gmail.com>
+ * @author Ramin Farmani <ramin.farmani@gmail.com>
  */
 class Message extends BaseMessage
 {
